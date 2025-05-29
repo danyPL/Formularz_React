@@ -1,6 +1,6 @@
 import React from "react"
 
-const ThankYou = ({ name, email, topic, description }) => {
+const ThankYou = (props) => {
 
     return (
         <div className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg text-gray-800 mt-10">
@@ -10,19 +10,19 @@ const ThankYou = ({ name, email, topic, description }) => {
             <div className="space-y-4">
                 <div>
                     <h4 className="font-semibold">Imię i nazwisko:</h4>
-                    <p className="ml-2">{name}</p>
+                    <p className="ml-2">{props.name}</p>
                 </div>
                 <div>
                     <h4 className="font-semibold">Adres Email:</h4>
-                    <p className="ml-2">{email}</p>
+                    <p className="ml-2">{props.email}</p>
                 </div>
                 <div>
                     <h4 className="font-semibold">Temat:</h4>
-                    <p className="ml-2">{topic}</p>
+                    <p className="ml-2">{props.topic}</p>
                 </div>
                 <div>
                     <h4 className="font-semibold">Opis:</h4>
-                    <p className="ml-2 whitespace-pre-wrap">{description}</p>
+                    <p className="ml-2 whitespace-pre-wrap">{props.description}</p>
                 </div>
             </div>
             <button
